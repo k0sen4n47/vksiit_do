@@ -1,0 +1,40 @@
+.group-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.group-list__item {
+    border: 1px solid var(--stroke);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.group-list__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.group-list__short-name {
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--black);
+}
+
+.group-list__curator {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--grey);
+}
+
+.group-list__actions {
+    display: flex;
+    gap: 10px;
+}

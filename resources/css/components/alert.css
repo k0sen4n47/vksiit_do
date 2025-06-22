@@ -1,0 +1,15 @@
+.alert-success {
+    background: rgb(43 203 43 / 41%);
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    color: var(--black);
+}
+
+.alert-danger {
+    background: rgba(228, 27, 27, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    width: fit-content;
+    color: var(--card);
+}

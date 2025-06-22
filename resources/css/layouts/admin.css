@@ -1,0 +1,395 @@
+.admin-dashboard {
+    display: flex;
+    gap: 35px;
+}
+
+.admin-dashboard__sidebar {
+    max-width: 400px;
+    width: 100%;
+
+}
+
+.admin-dashboard__sidebar .admin-sidebar {
+    padding: 30px;
+    background: var(--card);
+    border-radius: 10px;
+    width: 100%;
+    position: sticky;
+    top: 10%;
+    box-shadow: 0 0 30px -4px rgb(0 0 0 / 9%);
+}
+
+.admin-dashboard__sidebar .admin-sidebar .admin-sidebar__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-dashboard__sidebar .admin-sidebar .admin-sidebar__menu .admin-sidebar__menu-item {
+    list-style: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+.admin-dashboard__sidebar .admin-sidebar .admin-sidebar__menu .admin-sidebar__menu-item.active .admin-sidebar__menu-link {
+    color: var(--card);
+    background: var(--primary);
+    border-color: var(--card);
+}
+
+.admin-dashboard__sidebar .admin-sidebar .admin-sidebar__menu .admin-sidebar__menu-item .admin-sidebar__menu-link {
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--primary);
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--primary);
+    transition: all 0.3s ease-in;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.admin-dashboard__sidebar .admin-sidebar .admin-sidebar__menu .admin-sidebar__menu-item .admin-sidebar__menu-link:hover {
+    color: var(--card);
+    background: var(--primary);
+    border-color: var(--card);
+}
+
+
+.admin-dashboard__content {
+    border: 1px solid var(--primary);
+    border-radius: 10px;
+    padding: 45px;
+    width: 100%;
+}
+
+.admin-dashboard__title {
+    margin-bottom: 30px;
+}
+
+.dashboard__create-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#connections-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-create__connection-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-create__connection-remove{
+    width: fit-content !important;
+    padding: 10px !important;
+    margin-left: auto !important;
+}
+
+.form-create {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-create__top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-create__bot {
+    display: flex;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--black);
+    position: relative !important;
+    width: unset;
+    height: unset;
+    margin:  unset;
+}
+
+.form-group select,
+.form-group input {
+    padding: 10px 25px;
+    border-radius: 5px;
+    border: 1px solid var(--stroke);
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--stroke);
+    transition: all 0.3s ease-in;
+}
+
+.form-group input:hover {
+    border-color: var(--primary);
+}
+
+.dashboard__filter {
+    margin-bottom: 30px;
+}
+
+.dashboard__filter .form-filter {
+    display: flex;
+    gap: 10px;
+
+}
+
+.dashboard__filter .form-filter .form-group {
+    gap: 5px;
+}
+
+.form-control {
+    padding: 6px 21px;
+    border-radius: 5px;
+    background: var(--card);
+    border: 1px solid var(--stroke);
+}
+
+.form-filter__buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 4%;
+}
+
+.filter-confirm {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.filter-confirm svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.filter-confirm svg path {
+    transition: all 0.3s ease-in;
+}
+
+.filter-confirm:hover svg path {
+    fill: var(--primary);
+}
+
+.filter-unset {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background: transparent;
+}
+
+.filter-unset svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.filter-unset svg path {
+    transition: all 0.3s ease-in;
+    stroke: var(--stroke);
+}
+
+.filter-unset:hover svg path {
+    stroke: var(--red);
+}
+
+.form-filter__buttons a {
+    text-decoration: none;
+}
+
+
+
+
+
+.btn.editor {
+    padding: 8px 21px;
+    background: var(--card);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    transition: all 0.3s ease-in;
+    height: 45px;
+}
+
+.btn.editor:hover {
+    background: var(--primary);
+    color: var(--card);
+
+}
+
+.btn.deletor {
+    padding: 8px 21px;
+    background: var(--red);
+    color: var(--card);
+    border: 1px solid var(--red);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%;
+    transition: all 0.3s ease-in;
+    height: 45px;
+}
+
+.btn.deletor:hover {
+    background: var(--card);
+    color: var(--red);
+    border-color: var(--red);
+}
+
+
+
+.admin-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-list__item {
+    border: 1px solid var(--stroke);
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.admin-list__info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.admin-list__short-name {
+    font-weight: 300;
+    font-size: 20px;
+    color: var(--grey);
+}
+
+.admin-list__name {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--black);    
+}
+
+.admin-list__actions {
+    display: flex;
+    gap: 10px;
+}
+
+/* Стили для выпадающего меню */
+.admin-sidebar__submenu {
+    max-height: 0;
+    overflow: hidden;
+    list-style: none;
+    padding-left: 20px;
+    transition: max-height 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.admin-sidebar__menu-item.has-submenu.active>.admin-sidebar__submenu {
+    max-height: 500px;
+    margin-top: auto;
+}
+
+
+.admin-sidebar__submenu-link {
+    font-size: 18px;
+    /* Меньший размер шрифта для подменю */
+    font-weight: 300;
+    color: var(--black);
+    /* Цвет текста подменю (например, белый) */
+    text-decoration: none;
+    display: block;
+    /* Делаем ссылку блочным элементом для удобства клика */
+
+    /* Небольшой внутренний отступ */
+    transition: all 0.2s ease-in;
+}
+
+.admin-sidebar__submenu-link:hover {
+    color: var(--stroke);
+    /* Цвет при наведении */
+}
+
+/* Возможно, добавить стрелку или иконку для пунктов с подменю */
+.admin-sidebar__menu-item.has-submenu>.admin-sidebar__menu-link::after {
+    content: ' \25B6';
+    /* Unicode символ стрелки вправо */
+    font-size: 12px;
+    margin-left: 5px;
+    transition: transform 0.2s ease-in;
+}
+
+.admin-sidebar__menu-item.has-submenu.active>.admin-sidebar__menu-link::after {
+    transform: rotate(90deg);
+    /* Поворачиваем стрелку при активном родительском пункте */
+}
+
+/* Стили для активного элемента меню */
+.admin-sidebar__menu-link.active {
+    color: var(--card);
+    /* Белый текст */
+    background: var(--primary);
+    /* Синий фон */
+    border-color: var(--card);
+    /* Белая рамка */
+    font-weight: 600;
+    /* Жирный шрифт */
+}
+
+/* Стили для активного элемента подменю */
+.admin-sidebar__submenu-link.active {
+    color: var(--stroke);
+    /* Более темный цвет для активного подменю */
+    font-weight: 500;
+    /* Немного жирнее обычного */
+}
+
+/* Стиль для родительского элемента с активным подменю */
+.admin-sidebar__menu-item.has-submenu.active>.admin-sidebar__menu-link {
+    color: var(--card);
+    /* Белый текст для родителя */
+    background: var(--primary);
+    /* Синий фон для родителя */
+    border-color: var(--card);
+    /* Белая рамка для родителя */
+    font-weight: 600;
+    /* Жирный шрифт для родителя */
+}
+
+/* Изменяем цвет стрелки для активного родительского элемента */
+.admin-sidebar__menu-item.has-submenu.active>.admin-sidebar__menu-link::after {
+    color: var(--card);
+    /* Белый цвет стрелки */
+}

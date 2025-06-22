@@ -1,0 +1,72 @@
+{
+  "_codemirror-editor-3972d91d.js": {
+    "file": "assets/codemirror-editor-3972d91d.js"
+  },
+  "_vendor-7b5b6878.js": {
+    "file": "assets/vendor-7b5b6878.js"
+  },
+  "resources/css/app.css": {
+    "file": "assets/app-f2b329b4.css",
+    "isEntry": true,
+    "src": "resources/css/app.css"
+  },
+  "resources/css/pages/assignment.css": {
+    "file": "assets/assignment-091f97cc.css",
+    "isEntry": true,
+    "src": "resources/css/pages/assignment.css"
+  },
+  "resources/js/admin-sidebar.js": {
+    "file": "assets/admin-sidebar-819a633f.js",
+    "isEntry": true,
+    "src": "resources/js/admin-sidebar.js"
+  },
+  "resources/js/app.js": {
+    "file": "assets/app-291351b5.js",
+    "imports": [
+      "_vendor-7b5b6878.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  },
+  "resources/js/assignment-create.js": {
+    "file": "assets/assignment-create-2cb9592a.js",
+    "imports": [
+      "_codemirror-editor-3972d91d.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/assignment-create.js"
+  },
+  "resources/js/assignment-list.js": {
+    "file": "assets/assignment-list-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/assignment-list.js"
+  },
+  "resources/js/assignment-modal.js": {
+    "file": "assets/assignment-modal-b52c4b47.js",
+    "imports": [
+      "_codemirror-editor-3972d91d.js"
+    ],
+    "isEntry": true,
+    "src": "resources/js/assignment-modal.js"
+  },
+  "resources/js/assignment-show.js": {
+    "file": "assets/assignment-show-ec264e79.js",
+    "isEntry": true,
+    "src": "resources/js/assignment-show.js"
+  },
+  "resources/js/assignment-utils.js": {
+    "file": "assets/assignment-utils-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/assignment-utils.js"
+  },
+  "resources/js/editor.js": {
+    "file": "assets/editor-4ed993c7.js",
+    "isEntry": true,
+    "src": "resources/js/editor.js"
+  },
+  "resources/js/pages/student-assignment.js": {
+    "file": "assets/student-assignment-9a2a704e.js",
+    "isEntry": true,
+    "src": "resources/js/pages/student-assignment.js"
+  }
+}

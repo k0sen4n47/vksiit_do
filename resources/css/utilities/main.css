@@ -1,0 +1,235 @@
+.form-holder {
+    position: relative;
+    margin: 10% auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 748px;
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid var(--primary);
+    background: var(--card);
+    padding-top: clamp(1.875rem, -0.842rem + 4.35vw, 4.375rem);
+    padding-bottom: clamp(1.875rem, -0.842rem + 4.35vw, 4.375rem);
+    padding-right: clamp(6.25rem, 3.261rem + 4.78vw, 9rem);
+    padding-left: clamp(6.25rem, 3.261rem + 4.78vw, 9rem);
+}
+.form-holder.auth .form-group{
+gap: 5px;
+}
+.form-group__input-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-holder .title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 136.39%;
+    color: var(--primary);
+    margin: 0 auto;
+}
+
+.form-holder .form-top {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-floating {
+    position: relative;
+    width: 100%;
+    display: flex;
+}
+
+
+.form-floating .form-control {
+    position: relative;
+    display: block;
+    padding: 22px 30px 12px;
+    height: 60px;
+    color: var(--stroke);
+    line-height: 150%;
+    font-weight: 400;
+    font-size: 16px;
+    border: 1px solid var(--stroke);
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+    background: var(--card);
+    height: -moz-fit-content;
+    height: fit-content;
+    transition: 0.2s ease-in;
+    box-sizing: border-box;
+}
+
+
+
+.form-floating .form-control::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--stroke);
+    transition: all 0.2s ease-in;
+    opacity: 1;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+textarea {
+    border: none;
+    outline: none;
+    resize: none !important;
+}
+
+.btn {
+    gap: 10px;
+    width: 100%;
+    background: var(--primary);
+    color: var(--card);
+    transition: all 0.3s ease-in;
+    padding: 14px;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn:hover {
+    background: var(--card);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn.btn-control {
+    width: auto;
+    gap: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.btn.empty {
+    background: var(--card);
+    border: 1px solid var(--stroke);
+    color: var(--stroke);
+}
+
+.btn.empty:hover {
+    color: var(--card);
+    background: var(--stroke);
+}
+.btn.stroke {
+    background: var(--card);
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    padding: 10px 15px;
+}
+
+.btn.stroke:hover {
+    color: var(--card);
+    background: var(--primary);
+   
+}
+
+.btn.accent {
+    background: var(--primary);
+    color: var(--card);
+    width: -moz-fit-content;
+    width: fit-content;
+}
+
+.btn.accent:hover {
+    background: var(--card);
+    color: var(--primary);
+}
+
+.btn.revers {
+    background: var(--primary);
+    border: 1px solid var(--card);
+    color: var(--card);
+}
+
+.btn.revers:hover {
+    background: var(--card);
+    color: var(--primary);
+}
+
+.btn.remove {
+    background: var(--card);
+    border: 1px solid var(--red);
+    color: var(--red);
+    width: fit-content;
+}
+
+.btn.header-btn{
+    padding: 10px 25px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+h1,
+.h1 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 130%;
+    color: var(--black);
+    margin-bottom: 45px;
+}
+
+h2,
+.h2 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 130%;
+    color: var(--black);
+}
+
+h3,
+.h3 {
+    color: var(--black);
+    font-size: 28px;
+    line-height: 130%;
+    font-weight: 400;
+}
+
+h5,
+.h5 {
+    color: var(--black);
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 400;
+}
+
+h6,
+.h6 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--black);
+}
+
+
+p,
+.p1 {
+    color: var(--stroke);
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 300;
+}
+
+.p2 {
+    font-size: 20px;
+    color: var(--stroke);
+    line-height: 130%;
+    font-weight: 300;
+}

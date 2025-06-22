@@ -1,0 +1,223 @@
+header {
+    border-bottom: 2px solid var(--primary);
+    margin-bottom: 60px;
+}
+
+header .header-info {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    justify-content: space-between;
+}
+
+header .header-info .header-info__left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header .header-info .header-info__left .logo-link {
+    width: 70px;
+    height: 70px;
+}
+
+header .header-info .header-info__left .logo-link .logo {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+
+header .header-info .header-info__left nav {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header .header-info .header-info__left nav a {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 27.28px;
+    color: var(--black);
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease-in;
+    position: relative;
+}
+
+header .header-info .header-info__left nav a::after {
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    content: "";
+    transition: all 0.3s ease-in;
+    position: absolute;
+    left: 0;
+    border-radius: 10px
+}
+
+header .header-info .header-info__left nav a:hover {
+    color: var(--primary);
+}
+
+header .header-info .header-info__left nav a:hover::after {
+    width: 100%;
+}
+
+/* header .header-info .header-info__left nav a.router-link-exact-active::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--primary);
+    bottom: -10%;
+} */
+
+header .header-info .header-info__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* Tooltip styles */
+    /* Tooltip arrow */
+    /* Show tooltip on hover */
+}
+
+header .header-info .header-info__right .notification-btn {
+    background: transparent;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+    transition: transform 0.2s ease;
+}
+
+header .header-info .header-info__right .notification-btn:hover {
+    transform: scale(1.05);
+}
+
+header .header-info .header-info__right .notification-btn svg {
+    width: 40px;
+    height: 40px;
+}
+
+header .header-info .header-info__right .notification-btn .notification-count {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: var(--black);
+    font-weight: 400;
+}
+
+header .header-info .header-info__right .notification-btn .tooltip {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--tooltip-bg);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+header .header-info .header-info__right .notification-btn .tooltip::before {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 0 6px 6px 6px;
+    border-style: solid;
+    border-color: transparent transparent var(--tooltip-bg) transparent;
+}
+
+header .header-info .header-info__right .notification-btn:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+header .header-info .header-info__right .accaunt-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+header .header-info .header-info__right .accaunt-wrapper .nav-link {
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+    background: var(--card);
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.2s ease-in;
+    position: relative;
+}
+
+header .header-info .header-info__right .accaunt-wrapper a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+header .header-info .header-info__right .accaunt-wrapper .nav-link::after {
+    width: 0;
+    left: 0;
+    inset: 0;
+    position: absolute;
+    content: "";
+    transition: all 0.3s ease-in;
+    background: var(--primary);
+    z-index: -1;
+}
+
+header .header-info .header-info__right .accaunt-wrapper .nav-link:hover {
+    color: var(--card);
+    background: transparent;
+}
+
+header .header-info .header-info__right .accaunt-wrapper .nav-link:hover::after {
+    width: 100%;
+    border-radius: 0 2px 2px 0;
+}
+
+header .header-info .header-info__right .accaunt-wrapper .profile-inner {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+header .header-info .header-info__right .accaunt-wrapper .profile-inner svg {
+    width: 40px;
+    height: 40px;
+}
+
+header .header-info .header-info__right .accaunt-wrapper .profile-inner .profile-inner_name {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--black);
+}
+
+footer {
+    /* background: var(--primary); */
+    padding: 47px 0;
+    margin-top: auto;
+}
+
+.footer-info {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--card);
+}
+
+/*# sourceMappingURL=header.css.map */

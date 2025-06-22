@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){document.querySelectorAll(".admin-sidebar__menu-item.has-submenu > .admin-sidebar__menu-link").forEach(e=>{e.addEventListener("click",function(n){n.preventDefault(),this.closest(".admin-sidebar__menu-item").classList.toggle("active")})})});

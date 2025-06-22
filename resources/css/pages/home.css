@@ -1,0 +1,574 @@
+/* .advantages {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+} */
+
+.advantages__container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Заголовок секции */
+.advantages__header {
+    text-align: center;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    margin: 0;
+    border: unset;
+}
+
+.advantages__title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary);
+    position: relative;
+}
+
+.advantages__subtitle {
+    font-size: 1.2rem;
+    color: var(--grey);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Сетка карточек */
+.advantages__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+}
+
+/* Карточка преимущества */
+.advantage-card {
+    background: var(--card);
+    border-radius: 16px;
+    padding: 40px 30px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(39, 24, 198, 0.1);
+}
+
+.advantage-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary), #ab64ac);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.advantage-card:hover::before {
+    transform: scaleX(1);
+}
+
+
+/* Иконка */
+.advantage-card__icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary), #ab64ac);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+.advantage-card__icon::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: conic-gradient(transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: rotate 3s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.advantage-card:hover .advantage-card__icon::before {
+    opacity: 1;
+}
+
+.advantage-card__icon i {
+    font-size: 2rem;
+    color: white;
+    z-index: 1;
+    position: relative;
+}
+
+/* Заголовок карточки */
+.advantage-card__title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--black);
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.advantage-card:hover .advantage-card__title {
+    color: var(--primary);
+}
+
+/* Описание */
+.advantage-card__description {
+    font-size: 1rem;
+    color: var(--grey);
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.advantage-card:hover .advantage-card__description {
+    color: #666;
+}
+
+/* Анимация вращения */
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Анимация пульсации для иконок */
+@keyframes pulse {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+.advantage-card__icon {
+    animation: pulse 2s infinite;
+}
+
+.advantage-card:hover .advantage-card__icon {
+    animation: none;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .advantages {
+        padding: 60px 0;
+    }
+
+    .advantages__container {
+        padding: 0 15px;
+    }
+
+    .advantages__title {
+        font-size: 2rem;
+    }
+
+    .advantages__subtitle {
+        font-size: 1.1rem;
+    }
+
+    .advantages__grid {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .advantage-card {
+        padding: 30px 25px;
+    }
+
+    .advantage-card__icon {
+        width: 70px;
+        height: 70px;
+    }
+
+    .advantage-card__icon i {
+        font-size: 1.7rem;
+    }
+
+    .advantage-card__title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .advantages__title {
+        font-size: 1.8rem;
+    }
+
+    .advantages__subtitle {
+        font-size: 1rem;
+    }
+
+    .advantage-card {
+        padding: 25px 20px;
+    }
+
+    .advantage-card__icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .advantage-card__icon i {
+        font-size: 1.5rem;
+    }
+
+    .advantage-card__title {
+        font-size: 1.2rem;
+    }
+
+    .advantage-card__description {
+        font-size: 0.95rem;
+    }
+}
+
+/* Стили для скролла */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--red);
+}
+
+/* === Этапы обучения (современный дизайн) === */
+.steps {
+
+    padding: 70px 0 60px 0;
+}
+
+.steps__container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.steps__header {
+    text-align: center;
+    margin-bottom: 48px;
+    border: unset;
+}
+
+.steps__title {
+    font-size: 2.4rem;
+    color: var(--primary, #2718c6);
+    font-weight: 800;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+}
+
+.steps__subtitle {
+    color: var(--grey, #888);
+    font-size: 1.18rem;
+    font-weight: 500;
+}
+
+.steps__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+    justify-content: center;
+}
+
+.steps__item {
+    background: #fff;
+    border: none;
+    border-radius: 18px;
+    padding: 38px 28px 32px 28px;
+    min-width: 200px;
+    text-align: center;
+    box-shadow: 0 6px 32px 0 rgba(39, 24, 198, 0.07), 0 1.5px 6px 0 rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.18s, box-shadow 0.18s;
+    position: relative;
+    overflow: hidden;
+}
+
+.steps__item:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 12px 40px 0 rgba(39, 24, 198, 0.13), 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+}
+
+.steps__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2718c6 60%, #4a90e2 100%);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 800;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.10);
+}
+
+.steps__item-title {
+    font-size: 1.18rem;
+    color: var(--primary, #2718c6);
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.steps__item-desc {
+    color: var(--black, #222);
+    font-size: 1.04rem;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+    .steps__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .steps__item {
+        width: 100%;
+        min-width: unset;
+        max-width: 400px;
+    }
+}
+
+/* === FAQ (современный дизайн) === */
+.faq {
+    /* background: linear-gradient(120deg, #e9eefd 0%, #f8f9fa 100%); */
+    padding: 70px 0 60px 0;
+}
+
+.faq__container {
+    /* max-width: 900px; */
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.faq__header {
+    text-align: center;
+    margin-bottom: 40px;
+    border: unset;
+}
+
+.faq__title {
+    font-size: 2.3rem;
+    color: var(--primary, #2718c6);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.faq__list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.faq__item {
+    background: #fff;
+    border-radius: 16px;
+    border: none;
+    padding: 30px 36px 24px 36px;
+    box-shadow: 0 4px 24px 0 rgba(39, 24, 198, 0.07), 0 1.5px 6px 0 rgba(0, 0, 0, 0.03);
+    transition: box-shadow 0.18s, transform 0.18s;
+    position: relative;
+}
+
+.faq__item:hover {
+    box-shadow: 0 10px 32px 0 rgba(39, 24, 198, 0.13), 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+    transform: translateY(-4px) scale(1.01);
+}
+
+.faq__question {
+    color: var(--primary, #2718c6);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+}
+
+.faq__answer {
+    color: var(--black, #222);
+    font-size: 1.04rem;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+/* === Контакты (современный дизайн) === */
+.contacts {
+    /* background: linear-gradient(120deg, #f8f9fa 0%, #e9eefd 100%); */
+    padding: 70px 0 90px 0;
+}
+
+.contacts__container {
+    /* max-width: 700px; */
+    margin: 0 auto;
+}
+
+.contacts__header {
+    text-align: center;
+    margin-bottom: 36px;
+    border: unset;
+}
+
+.contacts__title {
+    font-size: 2.2rem;
+    color: var(--primary, #2718c6);
+    font-weight: 800;
+    letter-spacing: -1px;
+}
+
+.contacts__subtitle {
+    color: var(--grey, #888);
+    font-size: 1.13rem;
+    font-weight: 500;
+}
+
+.contacts__info {
+    display: flex;
+    gap: 22px;
+    margin-bottom: 32px;
+    align-items: flex-start;
+}
+
+.contacts__container .banner__button {
+    color: var(--card);
+}
+
+.contacts__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.13rem;
+    color: var(--black, #222);
+    background: #f4f7ff;
+    border-radius: 8px;
+    padding: 12px 20px;
+    box-shadow: 0 1px 4px rgba(39, 24, 198, 0.04);
+}
+
+.contacts__item i {
+    color: var(--primary, #2718c6);
+    font-size: 1.3em;
+}
+
+.contacts__label {
+    font-weight: 700;
+    color: var(--primary, #2718c6);
+}
+
+.contacts__link {
+    color: var(--primary, #2718c6);
+    text-decoration: underline;
+    transition: color 0.2s;
+    font-weight: 500;
+}
+
+.contacts__link:hover {
+    color: #1a1066;
+}
+
+.contacts__actions {
+    text-align: center;
+}
+
+.contacts__button {
+    margin-top: 16px;
+    display: inline-block;
+    background: linear-gradient(90deg, #2718c6 60%, #4a90e2 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 14px 38px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.18s, transform 0.18s;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.10);
+}
+
+.contacts__button:hover {
+    background: linear-gradient(90deg, #1a1066 60%, #4a90e2 100%);
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 6px 24px 0 rgba(39, 24, 198, 0.13);
+}
+
+/* === Анимация появления блоков === */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.9s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(32px);
+    animation: fadeInUp 0.9s cubic-bezier(.4, 0, .2, 1) forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Задержки для stagger-эффекта */
+.fade-delay-1 {
+    animation-delay: 0.1s;
+}
+
+.fade-delay-2 {
+    animation-delay: 0.2s;
+}
+
+.fade-delay-3 {
+    animation-delay: 0.3s;
+}
+
+.fade-delay-4 {
+    animation-delay: 0.4s;
+}
+
+.fade-delay-5 {
+    animation-delay: 0.5s;
+}
+
+.fade-delay-6 {
+    animation-delay: 0.6s;
+}

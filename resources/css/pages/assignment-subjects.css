@@ -1,0 +1,64 @@
+.assignment-subjects {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.assignment-subjects__tab-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.assignment-subjects__header {
+    margin-bottom: 2rem;
+}
+
+.assignment-subjects__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0;
+}
+
+.assignment-subjects__error {
+    background-color: var(--error-color);
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.assignment-subjects__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: clamp(0.625rem, 0.266rem + 0.82vw, 1.25rem);
+}
+
+.assignment-subjects__item {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+}
+
+.assignment-subjects__item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+.assignment-subjects__empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 30px -4px rgb(0 0 0 / 9%);
+    color: var(--stroke);
+}
